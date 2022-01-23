@@ -329,15 +329,18 @@ background : orange;
     background-size: cover;
 }
 
+.google-play img{
+    width: 100%;
+}
 .mobile .item .app-store{
     height: 50px;
     width: 200px;
     border: none;
     border-radius: 10px;
-    background-size: contain;
-    background:url("/images/app-store.jpg") no-repeat center center;
-    
+    overflow: hidden;
 }
+
+    
 
 .mobile{
     width: 100%;
