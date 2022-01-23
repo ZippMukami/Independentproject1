@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;500;700&display=swap');
+html, body{
+    font-family: "Poppins", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section.page-hero{
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: linear-gradient(#ffffff, #ffffff00 0%),
+     linear-gradient(-80deg, #f6b400 45%, #f6b40000 0%);
+}
+
+.header{
+    position: relative;
+    top: 0;
+    width: 90%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    font-size: 36px;
+    text-decoration: none;
+    color: black;
+    font-family: "Lobster", sans-serif;
+}
+
+.header .logo img{
+    width: 54px;
+    
+}
+
+.header .logo span{
+    color: #f6b400;
+} 
+.header .navigation a{
+    text-decoration: none;
+    margin: 10px 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #000000;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+.header .navigation a.active{
+    border-bottom: 5px solid orangered;
+
+}
+.hero{
+    min-width: 600px;
+    padding: 100px 100px;
+}
+.hero .hero-item{
+    float: left;
+    width: 50%;
+}
+.hero::after{
+    content: "";
+    display: table;
+    clear: both; /* to clear the child item float */
+}
+
+
+.title h1{
+    font-size: 54px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.title p{
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+
+.title .hero-button{
+    margin-left: 60px;
+    text-decoration: none;
+    padding: 15px 24px;
+    background: orange;
+    color: #fff;
+    border-radius: 30px;
+    border-bottom-right-radius: 0;
+
+}
+.hero-image img{
+    width: 450px;
+}
+
+.services{
+    padding-top: 250px;
+    background: #f7fdf6;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.service-item{
+    border: 1px solid #550312;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 20px;
+
+}
+.service-item h3{
+    color: #550312;
+    margin: 40px;
+    font-size: 43px;
+
+}
+
+.menu{
+    padding-top: 150px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.menu h1{
+    color: #000;
+    font-size: 54px;
+    
+}
+ .menu h1 span{
+     color: orange;
+ }
+.menu .line{
+    width: 150px;
+    padding: 7px;
+    background: orangered;
+    margin: 0 auto;
+}
+
+.row{
+    width: 100%;
+    padding: 100px;
+
+}
+.menu-column{
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+    
+}
+
+.menu-column .content{
+    box-shadow: 1px 2px 5px #cccccc;
+    border-radius: 40px;
+    padding: 40px;
+    position: relative;
+    margin: 15px;
+}
+
+.ribbon{
+    position: absolute;
+    top: 10px;
+    right: -0;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+
+
+}
+
+.ribbon span{
+    position: absolute;
+    top: 20px;
+    left: -20px ;
+    width: 250px;
+    padding: 15px 0; 
+    background-color: orangered;
+    color: #ffffff;
+    text-align: center;
+    transform: rotate(45deg);
+}
+.menu-column img{
+    width: 100%;
+
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+.menu-price{
+    text-align: left;
+    margin-left: 0 50px;
+    font-size: 25px;
+    font-weight: 500;
+
+
+}
+.menu-column h2{
+    color: #550312;
+    text-transform: uppercase;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.menu-column p{
+    margin: 50px;
+
+}
+
+.menu-price div{
+    float: left;
+    width: 50%;
+}
+
+.menu-price ::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menu-price button{
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    color: #e1ebe6;
+}
+
+.menu-price div:last-child{
+    text-align: right;
+}
+
+.services-callout{
+    padding-left: 0;
+    padding-right: 0px;
+}
+
+.callout{
+    width: 100%;
+    padding: 100px;
+    text-align: left;
+    font-size: 54px;
+
+}
+
+.callout h1 span{
+    color: orange;
+}
+.callout p{
+    font-size: 25px;
+    margin-top: 70px;
+    margin: 150px;
+    }
+
+.callout .item{
+    float: left;
+    width: 50%;
+}
+
+.image-wrap{
+    position: relative;
+    text-align: right;
+}
+
+
+.callout .item img{
+    max-width: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.callout .item img.top{
+
+    position: absolute;
+    top: 150px;
+    right: 180px;
+    max-width: 340px;
+}
+
+.callout:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.callout .dots{
+    width: 32px;
+    height: 32px;
+    background: grey;
+    border-radius: 16px;
+    float: left;
+    margin-right: 50px;
+}
+
+.callout .dots .active{
+background : orange;
+}
+
+.mobile-callout{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.mobile .item{
+    float: left;
+    width: 50%;
+    padding-right: 50px;
+    line-height: 1;
+}
+
+.mobile .item h1{
+    margin-bottom: 100px;
+}
+
+.mobile .item .google-play{
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.mobile .item .app-store{
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-size: contain;
+    background:url("/images/app-store.jpg") no-repeat center center;
+    
+}
+
+.mobile{
+    width: 100%;
+    padding: 100px;
+    text-align: left;
+    font-size: 50px;
+    background: orange;
+}
